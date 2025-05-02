@@ -1,0 +1,142 @@
+/* Terminal Window */
+.terminal-window {
+  width: 100%;
+  max-width: 700px;
+  background-color: var(--dark-bg-alt);
+  border-radius: 6px;
+  box-shadow: 0 0 30px rgba(0, 255, 0, 0.1);
+  overflow: hidden;
+  font-family: var(--font-mono);
+  margin: 0 auto;
+}
+
+.terminal-header {
+  background-color: var(--light-bg);
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.terminal-buttons {
+  display: flex;
+  margin-right: 15px;
+}
+
+.terminal-button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.terminal-button.close {
+  background-color: #ff5f56;
+}
+
+.terminal-button.minimize {
+  background-color: #ffbd2e;
+}
+
+.terminal-button.maximize {
+  background-color: #27c93f;
+}
+
+.terminal-title {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.terminal-body {
+  padding: 20px;
+  height: 400px;
+  overflow-y: auto;
+}
+
+.line {
+  display: flex;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.prompt {
+  color: var(--primary-color);
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.command {
+  color: var(--text-color);
+}
+
+.response {
+  color: var(--text-color);
+  margin-bottom: 15px;
+  padding-left: 15px;
+}
+
+/* Typing animation */
+.typing {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid var(--primary-color);
+  animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
+  animation-fill-mode: forwards;
+}
+
+.response:nth-of-type(1) .typing {
+  animation-delay: 0.5s;
+}
+
+.response:nth-of-type(2) .typing {
+  animation-delay: 3s;
+}
+
+.response:nth-of-type(3) .typing {
+  animation-delay: 6s;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+    border-right-color: transparent;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--primary-color);
+  }
+}
+
+/* Blinking cursor */
+.blink {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.cursor {
+  display: inline-block;
+  width: 10px;
+  height: 1.2em;
+  background-color: var(--primary-color);
+  animation: blink 1s step-end infinite;
+  margin-left: 5px;
+  vertical-align: middle;
+}
