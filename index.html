@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chris Hirwa | Software Engineer</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/terminal.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <div id="particles-js"></div>
+  <div id="matrix-rain"></div>
+  
+  <header>
+    <div class="container">
+      <div id="logo">&lt;/CH&gt;</div>
+      <nav>
+        <ul>
+          <li><a href="#home" class="nav-link active">home</a></li>
+          <li><a href="#about" class="nav-link">about</a></li>
+          <li><a href="#projects" class="nav-link">projects</a></li>
+          <li><a href="#skills" class="nav-link">skills</a></li>
+          <li><a href="#contact" class="nav-link">contact</a></li>
+        </ul>
+      </nav>
+      <div class="theme-switch">
+        <i class="fas fa-terminal"></i>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-container">
+      <section id="home">
+        <div class="container">
+          <div class="terminal-window">
+            <div class="terminal-header">
+              <div class="terminal-buttons">
+                <span class="terminal-button close"></span>
+                <span class="terminal-button minimize"></span>
+                <span class="terminal-button maximize"></span>
+              </div>
+              <div class="terminal-title">chris@hirwa:~</div>
+            </div>
+            <div class="terminal-body">
+              <div class="line">
+                <span class="prompt">chris@hirwa:~$</span>
+                <span class="command" id="command1">whoami</span>
+              </div>
+              <div class="response" id="response1">
+                <div class="typing">Chris Hirwa - Software Engineering Student at ALU</div>
+              </div>
+              <div class="line">
+                <span class="prompt">chris@hirwa:~$</span>
+                <span class="command" id="command2">cat about.txt</span>
+              </div>
+              <div class="response" id="response2">
+                <div class="typing">Passionate software engineering student interested in web development, AI, and cloud engineering.</div>
+              </div>
+              <div class="line">
+                <span class="prompt">chris@hirwa:~$</span>
+                <span class="command" id="command3">./view_portfolio.sh</span>
+              </div>
+              <div class="response" id="response3">
+                <div class="typing">Initializing portfolio... Scroll down to explore.</div>
+              </div>
+              <div class="line">
+                <span class="prompt blink">chris@hirwa:~$</span>
+                <span class="cursor"></span>
+              </div>
+            </div>
+          </div>
+          <div class="scroll-indicator">
+            <div class="mouse">
+              <div class="wheel"></div>
+            </div>
+            <div class="arrow">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="glitch" data-text="About Me">About Me</h2>
+            <div class="section-divider"></div>
+          </div>
+          <div class="about-content">
+            <div class="about-text">
+              <div class="terminal-text">
+                <p>Hello, I'm <span class="highlight">Chris Hirwa</span>, a software engineering student at African Leadership University (2024-2027). My journey in tech is driven by a passion for crafting digital solutions that make a difference.</p>
+                <p>I specialize in <span class="highlight">web development</span>, <span class="highlight">AI projects</span>, and <span class="highlight">cloud engineering</span>. Through my education and personal projects, I'm constantly expanding my knowledge and skills in these areas.</p>
+                <p>When I'm not coding, I enjoy exploring new technologies, contributing to open-source projects, and collaborating with fellow developers to solve challenging problems.</p>
+              </div>
+            </div>
+            <div class="about-stats">
+              <div class="stat-item">
+                <div class="stat-circle">
+                  <svg viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="45" class="stat-circle-bg" />
+                    <circle cx="50" cy="50" r="45" class="stat-circle-prog web-dev" />
+                  </svg>
+                  <div class="stat-text">Web Dev</div>
+                </div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-circle">
+                  <svg viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="45" class="stat-circle-bg" />
+                    <circle cx="50" cy="50" r="45" class="stat-circle-prog ai" />
+                  </svg>
+                  <div class="stat-text">AI</div>
+                </div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-circle">
+                  <svg viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="45" class="stat-circle-bg" />
+                    <circle cx="50" cy="50" r="45" class="stat-circle-prog cloud" />
+                  </svg>
+                  <div class="stat-text">Cloud</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="glitch" data-text="Projects">Projects</h2>
+            <div class="section-divider"></div>
+          </div>
+          <div class="projects-grid" id="projects-container">
+            <!-- Projects loaded from JS -->
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="glitch" data-text="Skills">Skills</h2>
+            <div class="section-divider"></div>
+          </div>
+          <div class="skills-container">
+            <div class="skill-category">
+              <h3>Frontend</h3>
+              <div class="skill-grid">
+                <div class="skill-item" data-skill="HTML5">
+                  <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                  <div class="skill-name">HTML5</div>
+                  <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                </div>
+                <div class="skill-item" data-skill="CSS3">
+                  <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                  <div class="skill-name">CSS3</div>
+                  <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                </div>
+                <div class="skill-item" data-skill="JavaScript">
+                  <div class="skill-icon"><i class="fab fa-js"></i></div>
+                  <div class="skill-name">JavaScript</div>
+                  <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="skill-category">
+              <h3>Backend</h3>
+              <div class="skill-grid">
+                <div class="skill-item" data-skill="Node.js">
+                  <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                  <div class="skill-name">Node.js</div>
+                  <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                </div>
+                <div class="skill-item" data-skill="Python">
+                  <div class="skill-icon"><i class="fab fa-python"></i></div>
+                  <div class="skill-name">Python</div>
+                  <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+                </div>
+                <div class="skill-item" data-skill="APIs">
+                  <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                  <div class="skill-name">APIs</div>
+                  <div class="skill-bar"><div class="skill-progress" style="width: 65%"></div></div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="skill-category">
+              <h3>Tools & Technologies</h3>
+              <div class="skill-grid">
+                <div class="skill-item" data-skill="Git">
+                  <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                  <div class="skill-name">Git</div>
+                  <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                </div>
+                <div class="skill-item" data-skill="AI">
+                  <div class="skill-icon"><i class="fas fa-robot"></i></div>
+                  <div class="skill-name">AI</div>
+                  <div class="skill-bar"><div class="skill-progress" style="width: 60%"></div></div>
+                </div>
+                <div class="skill-item" data-skill="Cloud">
+                  <div class="skill-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                  <div class="skill-name">Cloud</div>
+                  <div class="skill-bar"><div class="skill-progress" style="width: 65%"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="glitch" data-text="Contact">Contact</h2>
+            <div class="section-divider"></div>
+          </div>
+          <div class="contact-content">
+            <div class="contact-info">
+              <p>Feel free to reach out if you'd like to collaborate on a project, have a question, or just want to connect.</p>
+              <div class="contact-methods">
+                <div class="contact-method">
+                  <i class="fas fa-envelope"></i>
+                  <span>chris.hirwa@example.com</span>
+                </div>
+                <div class="contact-method">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Kigali, Rwanda</span>
+                </div>
+                <div class="social-links">
+                  <a href="https://github.com/" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                  <a href="https://linkedin.com/in/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://twitter.com/" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="contact-form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Your email">
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Your message"></textarea>
+              </div>
+              <button type="submit" class="submit-btn">Send Message</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="copyright">&copy; 2024 Chris Hirwa. All rights reserved.</div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/particles.min.js"></script>
+  <script src="js/terminal.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
