@@ -78,13 +78,13 @@ const Hero: React.FC = () => {
           <span className="text-xs text-cyber-green">user@cyberdeck ~ $</span>
         </div>
         <div className="pt-8">
-          <h2 className="text-lg text-cyber-green mb-4">> initializing system...</h2>
+          <h2 className="text-lg text-cyber-green mb-4">{"> initializing system..."}</h2>
           <h1 className="cyber-title mb-6">
             <span className="cyber-text">{displayText}</span>
           </h1>
           <p className="text-gray-400 mb-8 max-w-2xl">
-            <span className="text-cyber-purple">{'>'}</span> I'm a Software Engineer specializing in building 
-            innovative digital solutions. Focused on backend systems, cloud architecture, and cybersecurity.
+            <span className="text-cyber-purple">{'>'}</span> I'm Chris Hirwa, a Software Engineering Student at ALU specializing in 
+            Web Development, AI projects, and Cloud Engineering.
           </p>
           
           {isTypingComplete && (

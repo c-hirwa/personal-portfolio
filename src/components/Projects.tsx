@@ -10,46 +10,47 @@ interface Project {
   image: string;
   github?: string;
   demo?: string;
-  category: 'backend' | 'frontend' | 'fullstack';
+  category: 'backend' | 'frontend' | 'fullstack' | 'ai';
 }
 
 const Projects: React.FC = () => {
-  const [filter, setFilter] = useState<'all' | 'backend' | 'frontend' | 'fullstack'>('all');
+  const [filter, setFilter] = useState<'all' | 'backend' | 'frontend' | 'fullstack' | 'ai'>('all');
 
   const projects: Project[] = [
     {
       id: 1,
-      title: "Distributed Cache System",
-      description: "High-performance distributed caching system built with Redis and Node.js to handle millions of requests per day.",
-      technologies: ["Node.js", "Redis", "Docker", "AWS"],
-      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=500&h=300",
+      title: "AI Workout Planner",
+      description: "A solo project that generates personalized workout plans based on user goals, fitness level, and available equipment using machine learning algorithms.",
+      technologies: ["Python", "TensorFlow", "React", "Node.js"],
+      image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=500&h=300",
       github: "#",
-      category: 'backend'
+      category: 'ai'
     },
     {
       id: 2,
-      title: "Secure Authentication API",
-      description: "Zero-trust authentication service with multi-factor authentication and JWT token management.",
-      technologies: ["Python", "FastAPI", "PostgreSQL", "OAuth"],
-      image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=500&h=300",
-      github: "#",
-      category: 'backend'
-    },
-    {
-      id: 3,
-      title: "Network Monitoring Dashboard",
-      description: "Real-time network monitoring tool with interactive visualizations and alert system.",
-      technologies: ["React", "D3.js", "WebSockets", "Node.js"],
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=500&h=300",
+      title: "Farm-to-Table Platform",
+      description: "A collaborative team project connecting local farmers directly with consumers, featuring real-time inventory management and delivery tracking.",
+      technologies: ["React", "Express", "MongoDB", "Redux"],
+      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=500&h=300",
       github: "#",
       demo: "#",
       category: 'fullstack'
     },
     {
+      id: 3,
+      title: "Netflix Clone",
+      description: "A functional replica of the Netflix interface with movie browsing, trailer playback, and user authentication features.",
+      technologies: ["React", "Firebase", "TMDB API", "CSS"],
+      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=500&h=300",
+      github: "#",
+      demo: "#",
+      category: 'frontend'
+    },
+    {
       id: 4,
-      title: "Code Deployment Pipeline",
-      description: "Automated CI/CD pipeline for seamless code deployment with testing and rollback capabilities.",
-      technologies: ["Jenkins", "Docker", "Kubernetes", "Terraform"],
+      title: "RESTful API Service",
+      description: "A backend API service for managing user data, authentication, and resource sharing with comprehensive documentation.",
+      technologies: ["Node.js", "Express", "PostgreSQL", "JWT"],
       image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=500&h=300",
       github: "#",
       category: 'backend'
@@ -96,6 +97,13 @@ const Projects: React.FC = () => {
           >
             <Database className="inline-block w-4 h-4 mr-2" />
             Fullstack
+          </button>
+          <button 
+            className={`cyber-button ${filter === 'ai' ? 'bg-cyber-green/20' : ''}`} 
+            onClick={() => setFilter('ai')}
+          >
+            <Code className="inline-block w-4 h-4 mr-2" />
+            AI
           </button>
         </div>
         

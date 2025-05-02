@@ -16,13 +16,13 @@ const About: React.FC = () => {
             <div className="cyber-window p-6">
               <div className="text-gray-300 space-y-4">
                 <p>
-                  <span className="text-cyber-blue">{'>'}</span> Hello, I'm a passionate software engineer with expertise in building robust and scalable applications.
+                  <span className="text-cyber-blue">{'>'}</span> Hello, I'm Chris Hirwa, a Software Engineering Student at ALU with a passion for creating innovative digital solutions.
                 </p>
                 <p>
-                  <span className="text-cyber-purple">{'>'}</span> I specialize in backend development, distributed systems, and cloud architecture while maintaining strong frontend skills.
+                  <span className="text-cyber-purple">{'>'}</span> I specialize in Web Development, AI projects, and Cloud Engineering while continuously expanding my knowledge in these areas.
                 </p>
                 <p>
-                  <span className="text-cyber-green">{'>'}</span> With over <span className="text-cyber-green">5 years</span> of industry experience, I've worked on projects ranging from high-performance financial systems to consumer-facing applications.
+                  <span className="text-cyber-green">{'>'}</span> Currently in my <span className="text-cyber-green">2nd year</span> of studies, I'm actively working on projects that combine my technical skills with real-world applications.
                 </p>
                 <p>
                   <span className="text-cyber-orange">{'>'}</span> I'm constantly exploring new technologies and methodologies to solve complex problems and improve existing systems.
@@ -40,29 +40,24 @@ const About: React.FC = () => {
             <div className="cyber-window p-6">
               <pre className="text-sm text-gray-300 overflow-x-auto">
 {`{
-  "name": "Software Engineer",
-  "location": "Tech Hub City",
+  "name": "Chris Hirwa",
+  "title": "Software Engineering Student",
+  "location": "African Leadership University",
   "focus": [
-    "Backend Systems",
-    "Cloud Architecture", 
-    "System Design",
-    "API Development"
+    "Web Development",
+    "AI Projects", 
+    "Cloud Engineering"
   ],
-  "experience": {
-    "years": 5,
-    "roles": [
-      "Senior Software Engineer",
-      "Backend Developer",
-      "System Architect"
-    ]
-  },
   "education": {
-    "degree": "Computer Science",
-    "certifications": [
-      "AWS Solutions Architect",
-      "Kubernetes Administrator"
-    ]
-  }
+    "institution": "African Leadership University",
+    "degree": "BSc in Software Engineering",
+    "year": "2nd year"
+  },
+  "interests": [
+    "Web Development",
+    "AI Projects",
+    "Cloud Engineering"
+  ]
 }`}
               </pre>
             </div>

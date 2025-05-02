@@ -11,7 +11,7 @@ const Navbar: React.FC = () => {
       <div className="cyber-container flex justify-between items-center">
         <Link to="/" className="flex items-center space-x-2 text-cyber-green hover:text-cyber-blue transition-colors">
           <Terminal className="h-5 w-5" />
-          <span className="font-mono font-bold text-lg tracking-wider">DEV_SHELL</span>
+          <span className="font-mono font-bold text-lg tracking-wider">CHRIS_HIRWA</span>
         </Link>
         
         {/* Mobile menu button */}

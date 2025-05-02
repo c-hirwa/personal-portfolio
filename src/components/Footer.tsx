@@ -11,11 +11,11 @@ const Footer: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center mb-6 md:mb-0">
             <Terminal className="h-5 w-5 text-cyber-green mr-2" />
-            <span className="font-mono font-bold text-lg tracking-wider text-cyber-green">DEV_SHELL</span>
+            <span className="font-mono font-bold text-lg tracking-wider text-cyber-green">CHRIS_HIRWA</span>
           </div>
           
           <div className="text-gray-500 text-sm">
-            <p>© {currentYear} Software Portfolio. All code rights reserved.</p>
+            <p>© {currentYear} Chris Hirwa. All rights reserved.</p>
             <p className="mt-1">
               <span className="text-cyber-green">{'>'}</span> Made with React & TypeScript
             </p>

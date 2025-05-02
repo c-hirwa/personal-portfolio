@@ -15,33 +15,33 @@ const Certificates: React.FC = () => {
   const certificates: Certificate[] = [
     {
       id: 1,
-      name: "AWS Certified Solutions Architect",
-      issuer: "Amazon Web Services",
-      date: "2024",
+      name: "Web Development Fundamentals",
+      issuer: "FreeCodeCamp",
+      date: "2023",
       icon: "code",
       link: "#"
     },
     {
       id: 2,
-      name: "Certified Kubernetes Administrator",
-      issuer: "Cloud Native Computing Foundation",
+      name: "Introduction to Cloud Computing",
+      issuer: "AWS Training and Certification",
       date: "2023",
       icon: "terminal",
       link: "#"
     },
     {
       id: 3,
-      name: "Professional Cloud Developer",
-      issuer: "Google Cloud",
-      date: "2023",
+      name: "AI and Machine Learning Basics",
+      issuer: "Google AI",
+      date: "2024",
       icon: "code",
       link: "#"
     },
     {
       id: 4,
-      name: "Advanced Security Practitioner",
-      issuer: "CompTIA",
-      date: "2022",
+      name: "Database Design and Implementation",
+      issuer: "MongoDB University",
+      date: "2023",
       icon: "terminal",
       link: "#"
     },

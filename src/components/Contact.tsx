@@ -123,13 +123,13 @@ const Contact: React.FC = () => {
               <div className="space-y-4">
                 <div className="flex items-center">
                   <Code className="w-5 h-5 text-cyber-blue mr-3" />
-                  <a href="mailto:developer@example.com" className="text-gray-300 hover:text-cyber-blue transition-colors">
-                    developer@example.com
+                  <a href="mailto:c.hirwa@alustudent.com" className="text-gray-300 hover:text-cyber-blue transition-colors">
+                    c.hirwa@alustudent.com
                   </a>
                 </div>
                 <div className="flex items-center">
                   <Server className="w-5 h-5 text-cyber-blue mr-3" />
-                  <span className="text-gray-300">Location: Tech Valley</span>
+                  <span className="text-gray-300">Location: African Leadership University</span>
                 </div>
               </div>
             </div>
